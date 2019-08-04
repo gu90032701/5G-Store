@@ -4,7 +4,7 @@ class ProductsPage extends Component {
   render() {
     return (
       <div>
-        <h1>Hello from about Products Page</h1>
+        <h1>Hello from Products Page</h1>
       </div>
     );
   }

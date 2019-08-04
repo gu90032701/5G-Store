@@ -8,13 +8,25 @@ import Products from "./pages/ProductsPage";
 import Contact from "./pages/ContactPage";
 import SingleProduct from "./pages/SingleProductPage";
 import Default from "./pages/Default";
+import Cart from "./pages/CartPage";
+
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <h1>
-      Hello from 5G store
-      <Home />
-    </h1>
+    <>
+      {/*navbar sidebar footer*/}
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/products" exact component={Products} />
+        <Route path="/products/:id" component={SingleProduct} />
+        <Route path="/cart" component={Cart} />
+        <Route component={Default} />
+      </Switch>
+      ;
+    </>
   );
 }
 
