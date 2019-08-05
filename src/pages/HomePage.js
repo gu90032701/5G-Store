@@ -1,10 +1,15 @@
 import React, { Component } from "react";
-
+import { ProductConsumer } from "../context";
 class HomePage extends Component {
   render() {
     return (
       <div>
-        <h1>Hello from Home Page</h1>
+        <ProductConsumer>
+          {value => {
+            console.log(value);
+            return <h1>hello from home page</h1>;
+          }}
+        </ProductConsumer>
       </div>
     );
   }
