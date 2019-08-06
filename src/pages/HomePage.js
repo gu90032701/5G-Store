@@ -6,7 +6,6 @@ class HomePage extends Component {
       <div>
         <ProductConsumer>
           {value => {
-            console.log(value);
             return <h1>hello from home page</h1>;
           }}
         </ProductConsumer>
