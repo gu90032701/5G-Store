@@ -16,7 +16,7 @@ class Navbar extends Component {
                 <FaBars className="nav-icon" onClick={handleSidebar} />
                 <img src={logo} alt="5G store logo" />
                 <div className="nav—cart">
-                  <FaCartPlus className="nav-icon" onclick={handleCart} />
+                  <FaCartPlus className="nav-icon" onClick={handleCart} />
                   <div className="cart-items">{cartItems}</div>
                 </div>
               </div>

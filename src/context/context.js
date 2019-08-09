@@ -9,7 +9,8 @@ class ProductProvider extends Component {
     sidebarOpen: false,
     cartOpen: false,
     cartItems: 10,
-    links: linkData
+    links: linkData,
+    cart: []
   };
   //handle sidebar
   handleSidebar = () => {
@@ -17,7 +18,7 @@ class ProductProvider extends Component {
   };
   //handle cart
   handleCart = () => {
-    this.setState({ sidebarOpen: this.state.sidebarOpen });
+    this.setState({ cartOpen: !this.state.sidebarOpen });
   };
 
   //close cart
